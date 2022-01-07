@@ -16,7 +16,7 @@ export class VideoComponent extends BaseComponent<HTMLLIElement> {
 
   // https://www.youtube.com/watch?v=HM6UpQZvbhY
   // https://youtu.be/HM6UpQZvbhY
-  // 정규표현식 Regex
+  // Regex
   private convertToEmbeddedURL(url:string): string {
     const regExp = /^(?:https?:\/\/)?(?:www\.)?(?:(?:youtube.com\/(?:(?:watch\?v=)|(?:embed\/))([a-zA-Z0-9-]{11}))|(?:youtu.be\/([a-zA-Z0-9-]{11})))/;
     const match = url.match(regExp);
